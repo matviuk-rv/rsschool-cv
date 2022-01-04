@@ -98,10 +98,27 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1100px;
   margin: 70px auto;
   padding: 50px 10px 50px 10px;
   background: #ffffff;
+  border-radius: 20px;
+  border: 3px solid #333333;
+}
+
+.wrapper:hover {
+  border: 3px solid #2F80ED;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+}
+
+.wrapper:hover .introduction__name {
+  background-color: #2F80ED;
+  color: #fff;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
 }
 
 .introduction {
@@ -133,7 +150,7 @@ body {
 
 .introduction__name {
   padding: 30px 40px;
-  background-color: #2F80ED;
+  background-color: #333333;
   font-weight: 600;
   font-size: 28px;
   color: #ffffff;
@@ -165,6 +182,15 @@ body {
   border-radius: 10px;
 }
 
+.introduction__profile img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
 .introduction__contacts {
   font-weight: 300;
   font-size: 16px;
@@ -173,7 +199,22 @@ body {
 }
 
 .introduction__contacts p {
+  cursor: pointer;
   margin-bottom: 25px;
+}
+
+.introduction__contacts p:hover {
+  color: #2F80ED;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.introduction__contacts p:hover i {
+  color: #2F80ED;
 }
 
 .introduction__contacts p b {
@@ -182,6 +223,6 @@ body {
 }
 
 .introduction__contacts p i {
-  color: #2F80ED;
+  color: #333333;
   font-size: 20px;
 }
