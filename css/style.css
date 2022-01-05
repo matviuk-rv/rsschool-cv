@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;
+
+400;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -98,27 +100,33 @@ body {
 }
 
 .wrapper {
-  width: 1100px;
+  width: 1200px;
   margin: 70px auto;
-  padding: 50px 10px 50px 10px;
+  padding: 50px 0px;
   background: #ffffff;
   border-radius: 20px;
-  border: 3px solid #333333;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  border: 4px solid #333333;
 }
 
 .wrapper:hover {
-  border: 3px solid #2F80ED;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  border: 4px solid #2F80ED;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .wrapper:hover .introduction__name {
   background-color: #2F80ED;
   color: #fff;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
 }
 
 .introduction {
@@ -131,7 +139,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 20px;
+  padding: 0 30px;
+  margin-bottom: 50px;
 }
 
 .introduction__about {
@@ -149,6 +158,9 @@ body {
 }
 
 .introduction__name {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
   padding: 30px 40px;
   background-color: #333333;
   font-weight: 600;
@@ -170,8 +182,6 @@ body {
 
 .introduction__profile {
   max-width: 250px;
-  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .introduction__profile img {
@@ -180,15 +190,23 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .introduction__profile img:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 .introduction__contacts {
@@ -201,6 +219,9 @@ body {
 .introduction__contacts p {
   cursor: pointer;
   margin-bottom: 25px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
 }
 
 .introduction__contacts p:hover {
@@ -215,6 +236,9 @@ body {
 
 .introduction__contacts p:hover i {
   color: #2F80ED;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .introduction__contacts p b {
@@ -225,4 +249,81 @@ body {
 .introduction__contacts p i {
   color: #333333;
   font-size: 20px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .column {
+  width: 49.5%;
+}
+
+.content__block {
+  padding: 10px 0px 10px 50px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  border: 3px solid transparent;
+  border-radius: 20px;
+}
+
+.content__block:hover {
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  border: 3px solid #2F80ED;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.content__block:hover .content__title {
+  color: #2F80ED;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.content__block:hover .content__rectange {
+  background-color: #2F80ED;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.content__title {
+  margin-bottom: 20px;
+  padding-left: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.content__rectange {
+  width: 450px;
+  height: 5px;
+  background: #333333;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.content .skills__item {
+  font-weight: 300;
+  font-size: 20px;
+  color: #4f4f4f;
+  margin-bottom: 20px;
 }
