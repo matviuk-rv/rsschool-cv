@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -263,14 +263,22 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 15px;
 }
 
 .content .column {
-  width: 49.5%;
+  width: 49%;
 }
 
 .content__block {
-  padding: 10px 0px 10px 50px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 50px;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s;
@@ -333,11 +341,43 @@ body {
   transition: 2s;
 }
 
+.content .sticky {
+  position: sticky;
+  top: 20px;
+}
+
+.content .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .content .skills__item {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   color: #4f4f4f;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.content p,
+.content li {
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.content p img,
+.content li img {
+  padding-left: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 10px 0 20px 0;
+  height: 80px;
 }
 
 .footer {
@@ -362,8 +402,9 @@ body {
           align-items: center;
 }
 
-.footer__github {
+.footer__github i {
   font-size: 50px;
+  color: white;
 }
 
 .footer__course img {
@@ -372,6 +413,6 @@ body {
 
 .footer__year {
   font-size: 20px;
-  text-decoration: underline;
   font-weight: bold;
+  color: white;
 }
