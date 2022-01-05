@@ -100,7 +100,7 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1024px;
   margin: 70px auto;
   padding: 50px 0px;
   background: #ffffff;
@@ -206,7 +206,6 @@ body {
   transition: 2s;
   -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
           box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
 }
 
 .introduction__contacts {
@@ -294,14 +293,21 @@ body {
 
 .content__block:hover .content__rectange {
   background-color: #2F80ED;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  width: 400px;
+}
+
+.content__block:hover .content__title {
+  padding-left: 20px;
+  -webkit-transition: 4s all;
+  -o-transition: 4s all;
+  transition: 4s all;
 }
 
 .content__title {
   margin-bottom: 20px;
-  padding-left: 50px;
   font-size: 28px;
   font-weight: bold;
   color: #333333;
@@ -311,10 +317,10 @@ body {
 }
 
 .content__rectange {
-  width: 450px;
-  height: 5px;
+  width: 150px;
+  height: 8px;
   background: #333333;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 30px;
   -webkit-transition: 2s;
   -o-transition: 2s;
