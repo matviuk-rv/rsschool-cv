@@ -346,6 +346,13 @@ body {
   top: 20px;
 }
 
+.content .sticky:hover i {
+  -webkit-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+  color: #2F80ED;
+}
+
 .content .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,10 +370,21 @@ body {
   margin-bottom: 25px;
 }
 
+.content .skills__item i {
+  margin-right: 25px;
+  width: 5px;
+  display: inline-block;
+  color: transparent;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+}
+
 .content p,
 .content li {
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
   color: #333333;
   margin-bottom: 10px;
 }
