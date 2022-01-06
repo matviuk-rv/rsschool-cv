@@ -62,8 +62,8 @@
 
       <main class="content">
          <div class="column">
-            <div class="content__block">
-            <h2 class="content__title">Skills</h2>
+            <div class="content__block sticky">
+            <h2 class="content__title ">Skills</h2>
             <div class="content__rectange"></div>
                <ul class="skills skills__list">
                   <li class="skills__item"><i class="fab fa-html5"></i>HTML5</li>
@@ -76,33 +76,6 @@
                </ul>
             </div>
 
-            <div class="content__block">
-               <h2 class="content__title">Code</h2>
-               <div class="content__rectange"></div>
-               <pre>
-function fontsStyle(params) {
-   let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
-   if (file_content == '') {
-      fs.writeFile(source_folder + '/scss/fonts.scss', '', cb);
-      return fs.readdir(path.build.fonts, function (err, items) {
-         if (items) {
-            let c_fontname;
-            for (var i = 0; i < items.length; i++) {
-               let fontname = items[i].split('.');
-               fontname = fontname[0];
-               if (c_fontname != fontname) {
-                  fs.appendFile(source_folder + '/scss/fonts.scss',
-                   '@include font("' + fontname + '", "' 
-                  + fontname + '", "400", "normal");\r\n', cb);
-               }
-               c_fontname = fontname;
-            }
-         }
-      })
-   }
-}
-               </pre>
-            </div>
          </div>
 
          <div class="column">
