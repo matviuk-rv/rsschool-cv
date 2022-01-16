@@ -1,5 +1,72 @@
+body {
+  background-color: $dark;
+}
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.header {
+  height: 90px;
+  padding-top: 20px;
+  background: url("assets/img/header_bg.png") no-repeat center 0;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+    img {
+      object-fit: contain;
+      &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+          brightness(92%) contrast(87%);
+      }
+    }
+  }
+
+  &__navigation {
+    margin-left: auto;
+    width: 500px;
+  }
+
+  &__lang {
+    width: 70px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  padding: 0px 30px;
+  cursor: pointer;
+  &__item {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__link {
+    &:hover {
+      color: $main_color;
+    }
+  }
+}
+
+.lang-nav {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  &__item {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    &_active {
+      color: $main_color;
+    }
+  }
 }
