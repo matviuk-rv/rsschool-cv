@@ -1,11 +1,12 @@
 body {
-  background-color: $dark;
+  background-color: $white;
 }
 .container {
   width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
+/*--------------------*/
 .header {
   height: 90px;
   padding-top: 20px;
@@ -14,10 +15,12 @@ body {
     display: flex;
     align-items: center;
   }
-
   &__logo {
     width: 50px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       object-fit: contain;
       &:hover {
@@ -26,24 +29,21 @@ body {
       }
     }
   }
-
   &__navigation {
     margin-left: auto;
     width: 500px;
   }
-
   &__lang {
     width: 70px;
   }
 }
-
+/*--------------------*/
 .main-nav {
   display: flex;
   padding: 0px 30px;
-  cursor: pointer;
   &__item {
     font-size: 20px;
-    color: #ffffff;
+    color: $white;
     margin-right: 30px;
     &:last-child {
       margin-right: 0px;
@@ -51,22 +51,64 @@ body {
   }
   &__link {
     &:hover {
+      cursor: pointer;
       color: $main_color;
     }
   }
 }
-
+/*--------------------*/
 .lang-nav {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   &__item {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     color: #ffffff;
+    cursor: pointer;
     &_active {
       color: $main_color;
     }
   }
 }
+/*--------------------*/
+.main {
+  .container {
+    background: url("assets/img/header_bg.png") center -90px no-repeat;
+  }
+}
+/*--------------------*/
+.section-hero {
+  padding: 190px 60px 330px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  &__author {
+    font-family: Merriweather;
+    font-size: 60px;
+    color: $white;
+    margin-bottom: 40px;
+  }
+  &__text {
+    width: 470px;
+    font-size: 20px;
+    line-height: 40px;
+    color: $white;
+    margin-bottom: 25px;
+  }
+}
+/*--------------------*/
+.btn {
+  width: 220px;
+  height: 55px;
+  border: none;
+  background-color: $main_color;
+  font-size: 20px;
+  color: $dark;
+  cursor: pointer;
+  font-family: inherit;
+  &:hover {
+    color: $white;
+  }
+}
+/*--------------------*/
