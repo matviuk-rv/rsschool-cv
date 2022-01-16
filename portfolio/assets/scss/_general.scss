@@ -1,5 +1,5 @@
 body {
-  background-color: $white;
+  background-color: $dark;
 }
 .container {
   width: 1440px;
@@ -78,7 +78,7 @@ body {
   }
 }
 /*--------------------*/
-.section-hero {
+.hero {
   padding: 190px 60px 330px;
   height: 820px;
   display: flex;
@@ -112,3 +112,135 @@ body {
   }
 }
 /*--------------------*/
+.title-wrapper {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  .title {
+    position: relative;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: $main_color;
+    background-color: $dark;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 200%;
+      background-color: $main_color;
+      vertical-align: middle;
+      margin: 0 15px;
+    }
+    &::before {
+      top: 50%;
+    }
+    &::after {
+      top: 50%;
+    }
+  }
+}
+/*--------------------*/
+.skills {
+  padding-top: 100px;
+  height: 482px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__items {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+/*--------------------*/
+.skill-card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__image {
+    width: 65px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    line-height: 36px;
+  }
+}
+/*--------------------*/
+.portfolio {
+  height: 1500px;
+  padding-top: 100px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tabs {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: repeat(auto-fit, 560px);
+    gap:25px;
+  }
+
+  &__item {
+  }
+}
+.tab {
+  &__item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $main_color;
+    width: 220px;
+    height: 55px;
+    font-size: 20px;
+    color: $main_color;
+    margin-right: 5px;
+    &:hover {
+      color: $white;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+    &_active {
+      color: $dark;
+      background-color: $main_color;
+    }
+  }
+}

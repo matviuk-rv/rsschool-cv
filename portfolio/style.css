@@ -103,7 +103,7 @@ body {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 
 .container {
@@ -212,7 +212,7 @@ body {
 }
 
 /*--------------------*/
-.section-hero {
+.hero {
   padding: 190px 60px 330px;
   height: 820px;
   display: -webkit-box;
@@ -224,14 +224,14 @@ body {
           flex-direction: column;
 }
 
-.section-hero__author {
+.hero__author {
   font-family: Merriweather;
   font-size: 60px;
   color: #FFFFFF;
   margin-bottom: 40px;
 }
 
-.section-hero__text {
+.hero__text {
   width: 470px;
   font-size: 20px;
   line-height: 40px;
@@ -256,3 +256,186 @@ body {
 }
 
 /*--------------------*/
+.title-wrapper {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.title-wrapper .title {
+  position: relative;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #BDAE82;
+  background-color: #000000;
+}
+
+.title-wrapper .title::before, .title-wrapper .title::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 200%;
+  background-color: #BDAE82;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.title-wrapper .title::before {
+  top: 50%;
+}
+
+.title-wrapper .title::after {
+  top: 50%;
+}
+
+/*--------------------*/
+.skills {
+  padding-top: 100px;
+  height: 482px;
+}
+
+.skills__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__items {
+  margin-right: 40px;
+}
+
+.skills__items:last-child {
+  margin-right: 0px;
+}
+
+/*--------------------*/
+.skill-card {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-card__image {
+  width: 65px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.skill-card__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.skill-card__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.skill-card__text {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 36px;
+}
+
+/*--------------------*/
+.portfolio {
+  height: 1500px;
+  padding-top: 100px;
+}
+
+.portfolio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.portfolio__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 450px 450px;
+      grid-template-columns: 450px 450px 450px;
+  -ms-grid-rows: (560px)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 560px);
+  gap: 25px;
+}
+
+.tab__item {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #BDAE82;
+  width: 220px;
+  height: 55px;
+  font-size: 20px;
+  color: #BDAE82;
+  margin-right: 5px;
+}
+
+.tab__item:hover {
+  color: #FFFFFF;
+}
+
+.tab__item:last-child {
+  margin-right: 0px;
+}
+
+.tab__item_active {
+  color: #000000;
+  background-color: #BDAE82;
+}
