@@ -210,9 +210,6 @@ body {
     grid-template-rows: repeat(auto-fit, 560px);
     gap: 25px;
   }
-
-  &__item {
-  }
 }
 .tab {
   &__item {
@@ -250,7 +247,54 @@ body {
   }
 
   &__play {
-    position:absolute;
+    position: absolute;
     cursor: pointer;
+  }
+}
+/*--------------------*/
+.price {
+  height: 845px;
+  padding-top: 120px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 450px;
+    padding-top: 55px;
+    padding-bottom: 43px;
+    border: 1px solid $main_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 28px;
+    color: $white;
+    margin-bottom: 48px;
+  }
+
+  &__cena {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 24px;
+    color: $main_color;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    span {
+      display: block;
+      font-size: 18px;
+      color: $white;
+      text-align: center;
+      margin-bottom: 18px;
+    }
   }
 }
