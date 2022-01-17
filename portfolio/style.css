@@ -268,7 +268,6 @@ body {
 }
 
 .title-wrapper .title {
-  position: relative;
   font-family: Merriweather;
   font-weight: bold;
   font-size: 40px;
@@ -278,20 +277,19 @@ body {
 
 .title-wrapper .title::before, .title-wrapper .title::after {
   content: "";
-  position: absolute;
-  display: block;
-  height: 2px;
+  display: inline-block;
   width: 100%;
   background-color: #BDAE82;
-  top: 50%;
+  vertical-align: middle;
+  border: 2px solid #BDAE82;
 }
 
 .title-wrapper .title::after {
-  left: 15px;
+  margin-right: -100%;
 }
 
 .title-wrapper .title::before {
-  right: 15px;
+  margin-left: -100%;
 }
 
 /*--------------------*/
@@ -402,6 +400,10 @@ body {
   -ms-grid-rows: (560px)[auto-fit];
       grid-template-rows: repeat(auto-fit, 560px);
   gap: 25px;
+}
+
+.portfolio__item {
+  cursor: pointer;
 }
 
 .tab__item {
@@ -531,7 +533,7 @@ body {
 /*--------------------*/
 .contacts {
   height: 700px;
-  background: url("assets/img/contacts_bg.jpg") no-repeat center center;
+  background: url("assets/img/contacts_bg.jpg") no-repeat center 0;
 }
 
 .contacts__wrapper {
