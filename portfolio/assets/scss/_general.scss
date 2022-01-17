@@ -249,6 +249,10 @@ body {
   &__play {
     position: absolute;
     cursor: pointer;
+    &:hover {
+      filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+        brightness(92%) contrast(87%);
+    }
   }
 }
 /*--------------------*/
@@ -348,5 +352,50 @@ body {
     height: 100px;
     padding: 10px 20px;
     margin-bottom: 30px;
+  }
+}
+/*--------------------*/
+.footer {
+  height: 150px;
+  display: flex;
+  align-items:center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copywrite {
+    width: 182px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: $white;
+  }
+
+  &__school {
+    font-size: 20px;
+    color: $white;
+  }
+
+  &__social {
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img{
+      cursor: pointer;
+      &:hover{
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+        brightness(92%) contrast(87%);
+      }
+    }
+  }
+}
+.link{
+  color:inherit;
+  cursor: pointer;
+  &:hover{
+    color:$main_color;
   }
 }
