@@ -478,8 +478,8 @@ body {
 .price__item {
   width: 450px;
   padding-top: 55px;
-  padding-bottom: 43px;
-  border: 1px solid #BDAE82;
+  padding-bottom: 38px;
+  border: 3px solid #BDAE82;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,4 +521,93 @@ body {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 18px;
+}
+
+/*--------------------*/
+.contacts {
+  position: relative;
+  height: 700px;
+  background: url("assets/img/contacts_bg.jpg") no-repeat center center;
+}
+
+.contacts__block {
+  width: 450px;
+  position: absolute;
+  right: 50px;
+  top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts__title {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 40px;
+  color: #BDAE82;
+  margin-bottom: 60px;
+}
+
+.contacts__form-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form {
+  width: 450px;
+}
+
+.form__email, .form__phone, .form__message {
+  padding: 5px 20px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 20px;
+  color: #BDAE82;
+  border: 3px solid #BDAE82;
+}
+
+.form__email::-webkit-input-placeholder, .form__phone::-webkit-input-placeholder, .form__message::-webkit-input-placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+
+.form__email:-ms-input-placeholder, .form__phone:-ms-input-placeholder, .form__message:-ms-input-placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+
+.form__email::-ms-input-placeholder, .form__phone::-ms-input-placeholder, .form__message::-ms-input-placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+
+.form__email::placeholder, .form__phone::placeholder, .form__message::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+
+.form__message {
+  height: 100px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
 }

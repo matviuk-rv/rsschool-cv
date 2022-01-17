@@ -263,8 +263,8 @@ body {
   &__item {
     width: 450px;
     padding-top: 55px;
-    padding-bottom: 43px;
-    border: 1px solid $main_color;
+    padding-bottom: 38px;
+    border: 3px solid $main_color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,5 +296,57 @@ body {
       text-align: center;
       margin-bottom: 18px;
     }
+  }
+}
+/*--------------------*/
+.contacts {
+  position: relative;
+  height: 700px;
+  background: url("assets/img/contacts_bg.jpg") no-repeat center center;
+  &__block {
+    width: 450px;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 40px;
+    color: $main_color;
+    margin-bottom: 60px;
+  }
+
+  &__form-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.form {
+  width: 450px;
+  &__email,
+  &__phone,
+  &__message {
+    padding: 5px 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    color: $main_color;
+    border: 3px solid $main_color;
+    &::placeholder {
+      font-family: inherit;
+      color: #bdae82;
+      font-size: 20px;
+    }
+  }
+  &__message {
+    height: 100px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
   }
 }
