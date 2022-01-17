@@ -23,9 +23,11 @@ body {
     align-items: center;
     img {
       object-fit: contain;
+      transition: 1s;
       &:hover {
         filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
           brightness(92%) contrast(87%);
+          transition: 1s;
       }
     }
   }
@@ -45,15 +47,18 @@ body {
     font-size: 20px;
     color: $white;
     margin-right: 30px;
+    transition: 1s;
     &:last-child {
       margin-right: 0px;
     }
   }
   &__link {
     color: inherit;
+    transition: 1s;
     &:hover {
       cursor: pointer;
       color: $main_color;
+      transition: 1s;
     }
   }
 }
@@ -108,7 +113,9 @@ body {
   color: $dark;
   cursor: pointer;
   font-family: inherit;
+  transition: 1s;
   &:hover {
+    transition: 1s;
     color: $white;
   }
 }
@@ -224,8 +231,10 @@ body {
     font-size: 20px;
     color: $main_color;
     margin-right: 5px;
+    transition: 1s;
     &:hover {
       color: $white;
+      transition: 1s;
     }
     &:last-child {
       margin-right: 0px;
@@ -250,7 +259,9 @@ body {
   &__play {
     position: absolute;
     cursor: pointer;
+    transition: 1s;
     &:hover {
+      transition: 1s;
       filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
         brightness(92%) contrast(87%);
     }
@@ -389,7 +400,9 @@ body {
       align-items: flex-start;
       img {
         cursor: pointer;
+        transition: 1s;
         &:hover {
+          transition: 1s;
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
             brightness(92%) contrast(87%);
         }
@@ -400,7 +413,9 @@ body {
 .link {
   color: inherit;
   cursor: pointer;
+  transition: 1s;
   &:hover {
+    transition: 1s;
     color: $main_color;
   }
 }

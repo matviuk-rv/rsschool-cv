@@ -145,11 +145,15 @@ body {
 .header__logo img {
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .header__logo img:hover {
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .header__navigation {
@@ -173,6 +177,8 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   margin-right: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .main-nav__item:last-child {
@@ -181,11 +187,15 @@ body {
 
 .main-nav__link {
   color: inherit;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .main-nav__link:hover {
   cursor: pointer;
   color: #BDAE82;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /*--------------------*/
@@ -253,9 +263,13 @@ body {
   color: #000000;
   cursor: pointer;
   font-family: inherit;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #FFFFFF;
 }
 
@@ -423,10 +437,14 @@ body {
   font-size: 20px;
   color: #BDAE82;
   margin-right: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .tab__item:hover {
   color: #FFFFFF;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .tab__item:last-child {
@@ -460,9 +478,13 @@ body {
 .video__play {
   position: absolute;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .video__play:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
@@ -679,9 +701,13 @@ body {
 
 .footer__social ul img {
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .footer__social ul img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
@@ -689,8 +715,12 @@ body {
 .link {
   color: inherit;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .link:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #BDAE82;
 }
