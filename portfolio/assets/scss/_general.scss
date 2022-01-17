@@ -50,6 +50,7 @@ body {
     }
   }
   &__link {
+    color: inherit;
     &:hover {
       cursor: pointer;
       color: $main_color;
@@ -116,7 +117,7 @@ body {
   overflow: hidden;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   .title {
     position: relative;
     font-family: Merriweather;
@@ -124,41 +125,32 @@ body {
     font-size: 40px;
     text-align: center;
     color: $main_color;
-    background-color: $dark;
     &::before,
     &::after {
-      position: absolute;
       content: "";
-      display: inline-block;
-      height: 3px;
-      width: 200%;
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
       background-color: $main_color;
-      vertical-align: middle;
-      margin: 0 15px;
-    }
-    &::before {
       top: 50%;
     }
     &::after {
-      top: 50%;
+      left: 15px;
+    }
+    &::before {
+      right: 15px;
     }
   }
 }
 /*--------------------*/
 .skills {
-  padding-top: 100px;
+  padding-top: 120px;
   height: 482px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  &__items {
-    margin-right: 40px;
-    &:last-child {
-      margin-right: 0px;
-    }
   }
 }
 /*--------------------*/
@@ -169,7 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   &__image {
-    width: 65px;
+    width: 55px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -184,6 +176,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: $white;
+    line-height: 40px;
     margin-bottom: 20px;
   }
 
@@ -192,12 +185,13 @@ body {
     color: $white;
     text-align: center;
     line-height: 36px;
+    padding: 0 20px;
   }
 }
 /*--------------------*/
 .portfolio {
   height: 1500px;
-  padding-top: 100px;
+  padding-top: 120px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -214,7 +208,7 @@ body {
     display: grid;
     grid-template-columns: 450px 450px 450px;
     grid-template-rows: repeat(auto-fit, 560px);
-    gap:25px;
+    gap: 25px;
   }
 
   &__item {
@@ -242,5 +236,21 @@ body {
       color: $dark;
       background-color: $main_color;
     }
+  }
+}
+/*--------------------*/
+.video {
+  height: 945px;
+  padding-top: 120px;
+  &__player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__play {
+    position:absolute;
+    cursor: pointer;
   }
 }

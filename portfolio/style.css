@@ -179,6 +179,10 @@ body {
   margin-right: 0px;
 }
 
+.main-nav__link {
+  color: inherit;
+}
+
 .main-nav__link:hover {
   cursor: pointer;
   color: #BDAE82;
@@ -260,7 +264,7 @@ body {
   overflow: hidden;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .title-wrapper .title {
@@ -270,31 +274,29 @@ body {
   font-size: 40px;
   text-align: center;
   color: #BDAE82;
-  background-color: #000000;
 }
 
 .title-wrapper .title::before, .title-wrapper .title::after {
-  position: absolute;
   content: "";
-  display: inline-block;
-  height: 3px;
-  width: 200%;
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
   background-color: #BDAE82;
-  vertical-align: middle;
-  margin: 0 15px;
-}
-
-.title-wrapper .title::before {
   top: 50%;
 }
 
 .title-wrapper .title::after {
-  top: 50%;
+  left: 15px;
+}
+
+.title-wrapper .title::before {
+  right: 15px;
 }
 
 /*--------------------*/
 .skills {
-  padding-top: 100px;
+  padding-top: 120px;
   height: 482px;
 }
 
@@ -307,14 +309,6 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.skills__items {
-  margin-right: 40px;
-}
-
-.skills__items:last-child {
-  margin-right: 0px;
 }
 
 /*--------------------*/
@@ -336,7 +330,7 @@ body {
 }
 
 .skill-card__image {
-  width: 65px;
+  width: 55px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +353,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #FFFFFF;
+  line-height: 40px;
   margin-bottom: 20px;
 }
 
@@ -367,12 +362,13 @@ body {
   color: #FFFFFF;
   text-align: center;
   line-height: 36px;
+  padding: 0 20px;
 }
 
 /*--------------------*/
 .portfolio {
   height: 1500px;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .portfolio__wrapper {
@@ -438,4 +434,28 @@ body {
 .tab__item_active {
   color: #000000;
   background-color: #BDAE82;
+}
+
+/*--------------------*/
+.video {
+  height: 945px;
+  padding-top: 120px;
+}
+
+.video__player {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__play {
+  position: absolute;
+  cursor: pointer;
 }
