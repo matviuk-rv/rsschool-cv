@@ -658,6 +658,9 @@ body {
 
 .footer__social {
   width: 188px;
+}
+
+.footer__social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,11 +672,11 @@ body {
           align-items: flex-start;
 }
 
-.footer__social img {
+.footer__social ul img {
   cursor: pointer;
 }
 
-.footer__social img:hover {
+.footer__social ul img:hover {
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }

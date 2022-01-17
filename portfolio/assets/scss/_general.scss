@@ -358,7 +358,7 @@ body {
 .footer {
   height: 150px;
   display: flex;
-  align-items:center;
+  align-items: center;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -380,22 +380,24 @@ body {
 
   &__social {
     width: 188px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    img{
-      cursor: pointer;
-      &:hover{
-        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
-        brightness(92%) contrast(87%);
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      img {
+        cursor: pointer;
+        &:hover {
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+            brightness(92%) contrast(87%);
+        }
       }
     }
   }
 }
-.link{
-  color:inherit;
+.link {
+  color: inherit;
   cursor: pointer;
-  &:hover{
-    color:$main_color;
+  &:hover {
+    color: $main_color;
   }
 }
