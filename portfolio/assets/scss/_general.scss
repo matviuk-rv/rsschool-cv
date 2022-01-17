@@ -304,13 +304,15 @@ body {
 }
 /*--------------------*/
 .contacts {
-  position: relative;
   height: 700px;
   background: url("assets/img/contacts_bg.jpg") no-repeat center center;
+  &__wrapper {
+    position: relative;
+  }
   &__block {
     width: 450px;
     position: absolute;
-    right: 50px;
+    right: 0px;
     top: 80px;
     display: flex;
     flex-direction: column;
