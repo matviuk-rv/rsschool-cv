@@ -556,6 +556,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
 
 .contacts__title {
   font-family: Merriweather;
