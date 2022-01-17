@@ -530,15 +530,18 @@ body {
 
 /*--------------------*/
 .contacts {
-  position: relative;
   height: 700px;
   background: url("assets/img/contacts_bg.jpg") no-repeat center center;
+}
+
+.contacts__wrapper {
+  position: relative;
 }
 
 .contacts__block {
   width: 450px;
   position: absolute;
-  right: 50px;
+  right: 0px;
   top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,7 +556,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
 
 .contacts__title {
   font-family: Merriweather;
