@@ -102,6 +102,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
 }
@@ -187,15 +191,15 @@ body {
 
 .main-nav__link {
   color: inherit;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-nav__link:hover {
   cursor: pointer;
   color: #BDAE82;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*--------------------*/
@@ -214,14 +218,18 @@ body {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.lang-nav__item_active {
+.lang-nav__item:hover {
   color: #BDAE82;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*--------------------*/
-.main .container {
+.main {
   background: url("assets/img/header_bg.png") center -90px no-repeat;
 }
 
@@ -263,14 +271,16 @@ body {
   color: #000000;
   cursor: pointer;
   font-family: inherit;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #FFFFFF;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 /*--------------------*/
@@ -418,6 +428,15 @@ body {
 
 .portfolio__item {
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio__item:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .tab__item {
@@ -437,14 +456,16 @@ body {
   font-size: 20px;
   color: #BDAE82;
   margin-right: 5px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .tab__item:hover {
   color: #FFFFFF;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .tab__item:last-child {
@@ -485,6 +506,8 @@ body {
 .video__play:hover {
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $dark;
 }
@@ -27,7 +30,7 @@ body {
       &:hover {
         filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
           brightness(92%) contrast(87%);
-          transition: 1s;
+        transition: 1s;
       }
     }
   }
@@ -54,11 +57,11 @@ body {
   }
   &__link {
     color: inherit;
-    transition: 1s;
+    transition: 0.5s;
     &:hover {
       cursor: pointer;
       color: $main_color;
-      transition: 1s;
+      transition: 0.5s;
     }
   }
 }
@@ -72,16 +75,16 @@ body {
     text-align: center;
     color: #ffffff;
     cursor: pointer;
-    &_active {
+    transition: 0.5s;
+    &:hover {
       color: $main_color;
+      transition: 0.5s;
     }
   }
 }
 /*--------------------*/
 .main {
-  .container {
     background: url("assets/img/header_bg.png") center -90px no-repeat;
-  }
 }
 /*--------------------*/
 .hero {
@@ -113,10 +116,11 @@ body {
   color: $dark;
   cursor: pointer;
   font-family: inherit;
-  transition: 1s;
+  transition: 0.3s;
   &:hover {
-    transition: 1s;
+    transition: 0.3s;
     color: $white;
+    transform: scale(1.02);
   }
 }
 /*--------------------*/
@@ -215,8 +219,13 @@ body {
     grid-template-rows: repeat(auto-fit, 560px);
     gap: 25px;
   }
-  &__item{
+  &__item {
     cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.02);
+      transition: 0.5s;
+    }
   }
 }
 .tab {
@@ -231,10 +240,11 @@ body {
     font-size: 20px;
     color: $main_color;
     margin-right: 5px;
-    transition: 1s;
+    transition: 0.3s;
     &:hover {
       color: $white;
-      transition: 1s;
+      transform: scale(1.02);
+      transition: 0.3s;
     }
     &:last-child {
       margin-right: 0px;
@@ -262,6 +272,7 @@ body {
     transition: 1s;
     &:hover {
       transition: 1s;
+      transform: scale(1.1);
       filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
         brightness(92%) contrast(87%);
     }
