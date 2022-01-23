@@ -46,17 +46,46 @@
   }
   .skill-card {
     width: 300px;
+    &__image {
+      width: 45px;
+      height: 40px;
+    }
     &__title {
       font-size: 18px;
     }
     &__text {
-      font-size: 16px;
-      padding: 0 10px;
+      font-size: 15px;
+      padding: 0 9px;
+    }
+  }
+  .portfolio {
+    height: 1120px;
+    &__block {
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: repeat(auto-fit, 375px);
+    }
+  }
+  .video{
+    height: 720px;
+    &__play {
+      width:90px;
+      height: 90px;
+    }
+  }
+  .price {
+    &__item {
+      width: 300px;
     }
   }
 }
 //(768 and 991px)
 @media (max-width: 991px) {
+  body {
+    width: 992px;
+  }
+  .container {
+    width: 952px;
+  }
 }
 //(576px and 767px)
 @media (max-width: 767px) {

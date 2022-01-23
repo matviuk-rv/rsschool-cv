@@ -18,6 +18,9 @@ body {
   &__nav {
     display: flex;
     align-items: center;
+    .hamburger{
+      display: none;
+    }
   }
   &__logo {
     width: 50px;
@@ -76,9 +79,15 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    color: #ffffff;
+    color: $white;
     cursor: pointer;
     transition: 0.5s;
+    &_no {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      color: $white;
+    }
     &:hover {
       color: $main_color;
       transition: 0.5s;
@@ -181,7 +190,7 @@ body {
     align-items: center;
     margin-bottom: 50px;
     img {
-      width:100%;
+      width: 100%;
       height: 100%;
       object-fit: contain;
     }

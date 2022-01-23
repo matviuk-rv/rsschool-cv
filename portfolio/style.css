@@ -133,6 +133,10 @@ body {
           align-items: center;
 }
 
+.header__nav .hamburger {
+  display: none;
+}
+
 .header__logo {
   width: 50px;
   height: 50px;
@@ -219,10 +223,17 @@ body {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.lang-nav__item_no {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .lang-nav__item:hover {
@@ -802,11 +813,43 @@ body {
   .skill-card {
     width: 300px;
   }
+  .skill-card__image {
+    width: 45px;
+    height: 40px;
+  }
   .skill-card__title {
     font-size: 18px;
   }
   .skill-card__text {
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: 15px;
+    padding: 0 9px;
+  }
+  .portfolio {
+    height: 1120px;
+  }
+  .portfolio__block {
+    -ms-grid-columns: 300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+    -ms-grid-rows: (375px)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 375px);
+  }
+  .video {
+    height: 720px;
+  }
+  .video__play {
+    width: 90px;
+    height: 90px;
+  }
+  .price__item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 992px;
+  }
+  .container {
+    width: 952px;
   }
 }
