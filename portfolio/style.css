@@ -108,12 +108,13 @@ html {
 
 body {
   background-color: #000000;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
-  width: 1440px;
+  width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /*--------------------*/
@@ -147,6 +148,8 @@ body {
 }
 
 .header__logo img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 1s;
@@ -305,15 +308,17 @@ body {
   width: 100%;
   background-color: #BDAE82;
   vertical-align: middle;
-  border: 2px solid #BDAE82;
-}
-
-.title-wrapper .title::after {
-  margin-right: -100%;
+  border: 1px solid #BDAE82;
 }
 
 .title-wrapper .title::before {
   margin-left: -100%;
+  margin-right: 20px;
+}
+
+.title-wrapper .title::after {
+  margin-right: -100%;
+  margin-left: 20px;
 }
 
 /*--------------------*/
@@ -329,8 +334,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 /*--------------------*/
@@ -343,9 +346,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -367,6 +370,8 @@ body {
 }
 
 .skill-card__image img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -424,12 +429,18 @@ body {
   -ms-grid-rows: (560px)[auto-fit];
       grid-template-rows: repeat(auto-fit, 560px);
   gap: 25px;
+  justify-items: center;
 }
 
 .portfolio__item {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio__item:hover {
@@ -746,4 +757,56 @@ body {
   -webkit-transition: 1s;
   transition: 1s;
   color: #BDAE82;
+}
+
+@media (max-width: 1439px) {
+  body {
+    width: 1200px;
+  }
+  .container {
+    width: 1160px;
+  }
+  .portfolio {
+    height: 1320px;
+  }
+  .portfolio__block {
+    -ms-grid-columns: 375px 375px 375px;
+        grid-template-columns: 375px 375px 375px;
+    -ms-grid-rows: (470px)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 470px);
+    gap: 20px;
+  }
+  .video {
+    height: 825px;
+  }
+  .video .mix {
+    width: 100%;
+    height: auto;
+  }
+  .price__item {
+    width: 370px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body {
+    width: 992px;
+  }
+  .container {
+    width: 952px;
+  }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+  .skill-card {
+    width: 300px;
+  }
+  .skill-card__title {
+    font-size: 18px;
+  }
+  .skill-card__text {
+    font-size: 16px;
+    padding: 0 10px;
+  }
 }
