@@ -301,11 +301,11 @@
     &__wrapper {
       flex-direction: column;
     }
-  
+
     &__copywrite {
-     margin-bottom: 20px;
+      margin-bottom: 20px;
     }
-  
+
     &__school {
       margin-bottom: 30px;
     }
@@ -321,8 +321,8 @@
   }
   .header {
     background-size: auto 590px;
-    &__logo{
-      width:45px;
+    &__logo {
+      width: 45px;
       height: 45px;
     }
   }
@@ -341,7 +341,7 @@
     }
   }
   .skills {
-    height:920px;
+    height: 920px;
     padding-top: 50px;
     margin-bottom: 10px;
     &__wrapper {
@@ -353,8 +353,8 @@
   }
   .skill-card {
     width: 300px;
-    margin:0px 0px 40px 0px;
-    padding:20px 0px 0px 0px;
+    margin: 0px 0px 40px 0px;
+    padding: 20px 0px 0px 0px;
     &__image {
       margin-bottom: 10px;
     }
@@ -374,11 +374,11 @@
     &__tabs {
       flex-direction: column;
     }
-  
+
     &__block {
       grid-template-columns: 380px;
       grid-template-rows: repeat(auto-fit, 475px);
-      gap:0;
+      gap: 0;
       row-gap: 20px;
     }
   }
@@ -390,8 +390,8 @@
       width: 480px;
       height: auto;
       top: 120px;
-      margin:0 auto;
-      left:-20px;
+      margin: 0 auto;
+      left: -20px;
     }
   }
   .price {
@@ -430,7 +430,7 @@
       transition: 1s;
       color: $main_color;
     }
-  }  
+  }
 }
 //(320px and 479px)
 @media (max-width: 479px) {
@@ -438,110 +438,84 @@
     width: 320px;
   }
   .container {
-    width: 300px;
+    width: 280px;
   }
   .header {
     background-size: auto 590px;
-    &__logo{
-      width:45px;
-      height: 45px;
+    &__logo {
+      width: 35px;
+      height: 35px;
+    }
+    &__lang {
+      width: 65px;
+    }
+    &__nav {
+      .hamburger {
+        width: 35px;
+      }
+    }
+  }
+  .title-wrapper {
+    width: 100%;
+    .title {
+      font-size: 30px;
     }
   }
   .main {
     background-size: auto 590px;
   }
   .hero {
-    padding: 90px 20px;
+    padding: 90px 0px;
     height: 500px;
     &__author {
       font-size: 40px;
     }
     &__text {
-      width: 400px;
-      line-height: 40px;
+      width: 280px;
+      line-height: 28px;
     }
   }
   .skills {
-    height:920px;
+    height: 920px;
     padding-top: 50px;
     margin-bottom: 10px;
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-    }
   }
   .skill-card {
-    width: 300px;
-    margin:0px 0px 40px 0px;
-    padding:20px 0px 0px 0px;
-    &__image {
-      margin-bottom: 10px;
-    }
-    &__title {
-      margin-bottom: 10px;
-    }
-    &__text {
-      font-size: 16px;
-    }
+    width: 280px;
   }
   .portfolio {
-    height: 3370px;
-    padding-top: 50px;
-    &__wrapper {
-      margin-top: 40px;
-    }
-    &__tabs {
-      flex-direction: column;
-    }
-  
+    height: 2610px;
     &__block {
-      grid-template-columns: 380px;
-      grid-template-rows: repeat(auto-fit, 475px);
-      gap:0;
+      grid-template-columns: 280px;
+      grid-template-rows: repeat(auto-fit, 350px);
+      gap: 0;
       row-gap: 20px;
     }
   }
   .video {
-    height: 380px;
-    padding-top: 50px;
-    position: relative;
+    height: 280px;
     &__player {
-      width: 480px;
-      height: auto;
-      top: 120px;
-      margin:0 auto;
-      left:-20px;
+      width: 320px;
     }
   }
   .price {
-    height: 1575px;
+    height: 1525px;
     padding-top: 50px;
     &__item {
-      width: 350px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    &__title {
-      margin-bottom: 30px;
-    }
-    &__cena {
-      margin-bottom: 30px;
-    }
-    &__text {
-      margin-bottom: 20px;
+      width: 280px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
   .contacts {
     height: 500px;
     &__block {
       margin-top: 35px;
-      width: 400px;
+      width: 280px;
     }
   }
   .form {
-    width: 420px;
+    width: 280px;
   }
   .link {
     color: inherit;
@@ -551,5 +525,5 @@
       transition: 1s;
       color: $main_color;
     }
-  }  
+  }
 }
