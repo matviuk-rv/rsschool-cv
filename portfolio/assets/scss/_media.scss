@@ -81,6 +81,7 @@
 //(768 and 991px)
 @media (max-width: 991px) {
   body {
+    overflow-x: hidden;
     width: 768px;
   }
   .container {
@@ -93,10 +94,10 @@
       .hamburger {
         position: relative;
         display: block;
-        top: 36px;
+        top: 32px;
         transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         margin-left: 25px;
         span {
           display: block;
@@ -124,11 +125,45 @@
       }
     }
     &__navigation {
-      display: none;
+      position:absolute;
+      width:80%;
+      height: 100%;
+      top:0%;
+      right:-100%;
+      background-color:$dark;
+      transition:1s;
+      &_open{
+        right:0;
+        transition:1s;
+      }
     }
     &__lang {
       width: 82px;
       margin-left: auto;
+    }
+  }
+  .main-nav {
+    width: 150px;
+    flex-direction: column;
+    padding-top: 135px;
+    padding-left: 130px;
+    &__item {
+      font-size: 20px;
+      color: $white;
+      margin-bottom: 15px;
+      transition: 1s;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    &__link {
+      color: inherit;
+      transition: 0.5s;
+      &:hover {
+        cursor: pointer;
+        color: $main_color;
+        transition: 0.5s;
+      }
     }
   }
   .main {
