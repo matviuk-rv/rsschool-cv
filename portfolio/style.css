@@ -853,7 +853,7 @@ body {
     width: 644px;
   }
   .header {
-    background-size: 100% 590px;
+    background-size: auto 590px;
   }
   .header__nav {
     -webkit-box-align: center;
@@ -905,7 +905,7 @@ body {
   }
   .main {
     background: url("assets/img/header_bg.png") center -90px no-repeat;
-    background-size: 100% 590px;
+    background-size: auto 590px;
   }
   .hero {
     padding: 93px 0px 152px;
@@ -1108,5 +1108,275 @@ body {
   }
   .footer__school {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 480px;
+  }
+  .container {
+    width: 440px;
+  }
+  .header {
+    background-size: auto 590px;
+  }
+  .header__logo {
+    width: 45px;
+    height: 45px;
+  }
+  .main {
+    background-size: auto 590px;
+  }
+  .hero {
+    padding: 90px 20px;
+    height: 500px;
+  }
+  .hero__author {
+    font-size: 40px;
+  }
+  .hero__text {
+    width: 400px;
+    line-height: 40px;
+  }
+  .skills {
+    height: 920px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+  .skills__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skill-card {
+    width: 300px;
+    margin: 0px 0px 40px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+  .skill-card__image {
+    margin-bottom: 10px;
+  }
+  .skill-card__title {
+    margin-bottom: 10px;
+  }
+  .skill-card__text {
+    font-size: 16px;
+  }
+  .portfolio {
+    height: 3370px;
+    padding-top: 50px;
+  }
+  .portfolio__wrapper {
+    margin-top: 40px;
+  }
+  .portfolio__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__block {
+    -ms-grid-columns: 380px;
+        grid-template-columns: 380px;
+    -ms-grid-rows: (475px)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 475px);
+    gap: 0;
+    row-gap: 20px;
+  }
+  .video {
+    height: 380px;
+    padding-top: 50px;
+    position: relative;
+  }
+  .video__player {
+    width: 480px;
+    height: auto;
+    top: 120px;
+    margin: 0 auto;
+    left: -20px;
+  }
+  .price {
+    height: 1575px;
+    padding-top: 50px;
+  }
+  .price__item {
+    width: 350px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price__cena {
+    margin-bottom: 30px;
+  }
+  .price__text {
+    margin-bottom: 20px;
+  }
+  .contacts {
+    height: 500px;
+  }
+  .contacts__block {
+    margin-top: 35px;
+    width: 400px;
+  }
+  .form {
+    width: 420px;
+  }
+  .link {
+    color: inherit;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .link:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: #BDAE82;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    width: 320px;
+  }
+  .container {
+    width: 300px;
+  }
+  .header {
+    background-size: auto 590px;
+  }
+  .header__logo {
+    width: 45px;
+    height: 45px;
+  }
+  .main {
+    background-size: auto 590px;
+  }
+  .hero {
+    padding: 90px 20px;
+    height: 500px;
+  }
+  .hero__author {
+    font-size: 40px;
+  }
+  .hero__text {
+    width: 400px;
+    line-height: 40px;
+  }
+  .skills {
+    height: 920px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+  .skills__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skill-card {
+    width: 300px;
+    margin: 0px 0px 40px 0px;
+    padding: 20px 0px 0px 0px;
+  }
+  .skill-card__image {
+    margin-bottom: 10px;
+  }
+  .skill-card__title {
+    margin-bottom: 10px;
+  }
+  .skill-card__text {
+    font-size: 16px;
+  }
+  .portfolio {
+    height: 3370px;
+    padding-top: 50px;
+  }
+  .portfolio__wrapper {
+    margin-top: 40px;
+  }
+  .portfolio__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__block {
+    -ms-grid-columns: 380px;
+        grid-template-columns: 380px;
+    -ms-grid-rows: (475px)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 475px);
+    gap: 0;
+    row-gap: 20px;
+  }
+  .video {
+    height: 380px;
+    padding-top: 50px;
+    position: relative;
+  }
+  .video__player {
+    width: 480px;
+    height: auto;
+    top: 120px;
+    margin: 0 auto;
+    left: -20px;
+  }
+  .price {
+    height: 1575px;
+    padding-top: 50px;
+  }
+  .price__item {
+    width: 350px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price__cena {
+    margin-bottom: 30px;
+  }
+  .price__text {
+    margin-bottom: 20px;
+  }
+  .contacts {
+    height: 500px;
+  }
+  .contacts__block {
+    margin-top: 35px;
+    width: 400px;
+  }
+  .form {
+    width: 420px;
+  }
+  .link {
+    color: inherit;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .link:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: #BDAE82;
   }
 }

@@ -87,7 +87,7 @@
     width: 644px;
   }
   .header {
-    background-size: 100% 590px;
+    background-size: auto 590px;
     &__nav {
       align-items: center;
       .hamburger {
@@ -133,7 +133,7 @@
   }
   .main {
     background: url("assets/img/header_bg.png") center -90px no-repeat;
-    background-size: 100% 590px;
+    background-size: auto 590px;
   }
   .hero {
     padding: 93px 0px 152px;
@@ -311,12 +311,245 @@
     }
   }
 }
-//(576px and 767px)
+//(480px and 767px)
 @media (max-width: 767px) {
+  body {
+    width: 480px;
+  }
+  .container {
+    width: 440px;
+  }
+  .header {
+    background-size: auto 590px;
+    &__logo{
+      width:45px;
+      height: 45px;
+    }
+  }
+  .main {
+    background-size: auto 590px;
+  }
+  .hero {
+    padding: 90px 20px;
+    height: 500px;
+    &__author {
+      font-size: 40px;
+    }
+    &__text {
+      width: 400px;
+      line-height: 40px;
+    }
+  }
+  .skills {
+    height:920px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  .skill-card {
+    width: 300px;
+    margin:0px 0px 40px 0px;
+    padding:20px 0px 0px 0px;
+    &__image {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  .portfolio {
+    height: 3370px;
+    padding-top: 50px;
+    &__wrapper {
+      margin-top: 40px;
+    }
+    &__tabs {
+      flex-direction: column;
+    }
+  
+    &__block {
+      grid-template-columns: 380px;
+      grid-template-rows: repeat(auto-fit, 475px);
+      gap:0;
+      row-gap: 20px;
+    }
+  }
+  .video {
+    height: 380px;
+    padding-top: 50px;
+    position: relative;
+    &__player {
+      width: 480px;
+      height: auto;
+      top: 120px;
+      margin:0 auto;
+      left:-20px;
+    }
+  }
+  .price {
+    height: 1575px;
+    padding-top: 50px;
+    &__item {
+      width: 350px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__cena {
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts {
+    height: 500px;
+    &__block {
+      margin-top: 35px;
+      width: 400px;
+    }
+  }
+  .form {
+    width: 420px;
+  }
+  .link {
+    color: inherit;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      color: $main_color;
+    }
+  }  
 }
-//(450px mand 575px)
-@media (max-width: 575px) {
-}
-//(320px and 449px)
-@media (max-width: 449px) {
+//(320px and 479px)
+@media (max-width: 479px) {
+  body {
+    width: 320px;
+  }
+  .container {
+    width: 300px;
+  }
+  .header {
+    background-size: auto 590px;
+    &__logo{
+      width:45px;
+      height: 45px;
+    }
+  }
+  .main {
+    background-size: auto 590px;
+  }
+  .hero {
+    padding: 90px 20px;
+    height: 500px;
+    &__author {
+      font-size: 40px;
+    }
+    &__text {
+      width: 400px;
+      line-height: 40px;
+    }
+  }
+  .skills {
+    height:920px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  .skill-card {
+    width: 300px;
+    margin:0px 0px 40px 0px;
+    padding:20px 0px 0px 0px;
+    &__image {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  .portfolio {
+    height: 3370px;
+    padding-top: 50px;
+    &__wrapper {
+      margin-top: 40px;
+    }
+    &__tabs {
+      flex-direction: column;
+    }
+  
+    &__block {
+      grid-template-columns: 380px;
+      grid-template-rows: repeat(auto-fit, 475px);
+      gap:0;
+      row-gap: 20px;
+    }
+  }
+  .video {
+    height: 380px;
+    padding-top: 50px;
+    position: relative;
+    &__player {
+      width: 480px;
+      height: auto;
+      top: 120px;
+      margin:0 auto;
+      left:-20px;
+    }
+  }
+  .price {
+    height: 1575px;
+    padding-top: 50px;
+    &__item {
+      width: 350px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__cena {
+      margin-bottom: 30px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts {
+    height: 500px;
+    &__block {
+      margin-top: 35px;
+      width: 400px;
+    }
+  }
+  .form {
+    width: 420px;
+  }
+  .link {
+    color: inherit;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      color: $main_color;
+    }
+  }  
 }
