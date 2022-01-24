@@ -297,14 +297,19 @@
     }
   }
   .footer {
-    height:190px;
+    height: 190px;
     &__wrapper {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    }
+  
+    &__copywrite {
+     margin-bottom: 20px;
+    }
+  
+    &__school {
+      margin-bottom: 30px;
     }
   }
- 
 }
 //(576px and 767px)
 @media (max-width: 767px) {
